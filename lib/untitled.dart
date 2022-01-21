@@ -1,34 +1,10 @@
 
-
-void main() {
-
-  String name = 'muhammad';
-  String? nullableName = name;
-
-
-  int? total = null;
-  total = 34;
-
-  if(total != null) {
-    print(total.toDouble());
-  }
-
-
-  int? number;
-  var nullable = number!;
-
-
-  /*String? name;
-
-  var firstName = name ?? 'Muhammad';*/
-
-  double? doubleNumber;
-  int? intNumber = doubleNumber?.toInt();
-
-  print(intNumber);
-
+void name({required String firstName, String lastName = 'test'}){
+  print('Hello my name is $firstName $lastName');
 }
 
-
-
-
+void main() {
+  name(firstName: 'Muhammad', lastName: 'Farros');
+  /*name(lastName: 'Setiawan');
+  name();*/
+}
